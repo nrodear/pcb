@@ -1,0 +1,313 @@
+
+(session "smart-telefon8.ses"
+  (base_design "smart-telefon8.dsn")
+  (placement
+    (resolution um 10)
+    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal
+      (place J1 1435000 -665000 front 0)
+    )
+    (component Capacitor_THT:CP_Radial_D10.0mm_P5.00mm
+      (place C1 1150000 -645000 front 270)
+    )
+    (component Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm
+      (place C2 980000 -730000 front 90)
+    )
+    (component Diode_THT:Diode_Bridge_19.0x3.5x10.0mm_P5.0mm
+      (place D1 1376680 -640080 front 180)
+    )
+    (component "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+      (place D2 1249680 -774660 front 0)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical
+      (place J2 863600 -652730 front 0)
+    )
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal
+      (place R1 1522480 -772160 front 180)
+      (place R3 1076960 -772160 front 180)
+    )
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal::1
+      (place R2 1366520 -701040 front 180)
+    )
+    (component "Converter_DCDC:Converter_DCDC_TRACO_TSR-1_THT"
+      (place U1 1026160 -655320 front 270)
+    )
+    (component "Package_DIP:DIP-4_W7.62mm"
+      (place U2 1211790 -771660 front 180)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(5.1.10)-1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(C1-Pad1)"
+        (wire
+          (path F.Cu 10000
+            1150000 -645000
+            1170000 -645000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1226680 -640080
+            1174920 -640080
+            1170000 -645000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1026160 -655320
+            1048660 -655320
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1048660 -655320
+            1058980 -645000
+            1150000 -645000
+          )
+        )
+      )
+      (net /VCC
+        (wire
+          (path B.Cu 10000
+            980000 -730000
+            965324 -744676
+            879346 -744676
+            863600 -728930
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1003660 -706120
+            1003660 -706340
+            980000 -730000
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1026160 -706120
+            1003660 -706120
+          )
+        )
+      )
+      (net "Net-(D2-Pad1)"
+        (wire
+          (path F.Cu 10000
+            1370080 -772160
+            1352080 -772160
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1249680 -774660
+            1267680 -774660
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1267680 -774660
+            1282684 -789664
+            1334576 -789664
+            1352080 -772160
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1211790 -771660
+            1229790 -771660
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1249680 -774660
+            1231680 -774660
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1229790 -771660
+            1229790 -772770
+            1231680 -774660
+          )
+        )
+      )
+      (net /RST
+        (wire
+          (path B.Cu 10000
+            924560 -772160
+            884897 -772160
+            848076 -735339
+            848076 -719054
+            863600 -703530
+          )
+        )
+      )
+      (net "Net-(R2-Pad2)"
+        (wire
+          (path B.Cu 10000
+            1211790 -746260
+            1211790 -728260
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1211790 -728260
+            1214120 -725930
+            1214120 -701040
+          )
+        )
+      )
+      (net "Net-(R3-Pad1)"
+        (wire
+          (path F.Cu 10000
+            1135590 -771660
+            1077460 -771660
+            1076960 -772160
+          )
+        )
+      )
+      (net /POWER
+        (wire
+          (path F.Cu 10000
+            1326680 -640080
+            1327808 -640080
+            1403528 -715800
+            1435000 -715800
+          )
+        )
+      )
+      (net /RING
+        (wire
+          (path B.Cu 10000
+            1435000 -690400
+            1453500 -690400
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1522480 -772160
+            1453500 -703180
+            1453500 -690400
+          )
+        )
+      )
+      (net /GND
+        (wire
+          (path B.Cu 10000
+            1135590 -746260
+            1135590 -728260
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1135590 -728260
+            1150000 -713850
+            1150000 -695000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1026160 -680720
+            1003660 -680720
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1003660 -680720
+            1002940 -680000
+            980000 -680000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1026160 -680720
+            1135720 -680720
+            1150000 -695000
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            980000 -680000
+            952730 -652730
+            889000 -652730
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1150000 -695000
+            1196012 -695000
+            1250932 -640080
+            1276680 -640080
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1325880 -774660
+            1325880 -756660
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1337681 -701081
+            1337681 -744859
+            1325880 -756660
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1276680 -640080
+            1337681 -701081
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1337681 -701081
+            1366479 -701081
+            1366520 -701040
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1376680 -665000
+            1376680 -640080
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1366520 -701040
+            1376680 -690880
+            1376680 -665000
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1376680 -665000
+            1416500 -665000
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1435000 -665000
+            1416500 -665000
+          )
+        )
+      )
+    )
+  )
+)

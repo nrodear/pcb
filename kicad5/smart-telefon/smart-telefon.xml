@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\raspberry\KiCad-myProjects\smart-telefon\smart-telefon.sch</source>
+    <date>29.05.2021 00:04:08</date>
+    <tool>Eeschema (5.1.10)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>smart-telefon.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D2">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148" description="100V 0.15A standard switching diode, DO-35"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AAB840</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>PC817</value>
+      <footprint>Package_DIP:DIP-4_W7.62mm</footprint>
+      <datasheet>http://www.soselectronic.cz/a_info/resource/d/pc817.pdf</datasheet>
+      <libsource lib="Isolator" part="PC817" description="DC Optocoupler, Vce 35V, CTR 50-300%, DIP-4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AADEC5</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>560</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AAF922</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>ESP 8266</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic_Shielded" part="Conn_02x04_Top_Bottom_Shielded" description="Generic shielded connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AACDEE</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>220 nF</value>
+      <footprint>Capacitor_THT:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AB9A0D</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TSR_1-2433</value>
+      <footprint>Converter_DCDC:Converter_DCDC_TRACO_TSR-1_THT</footprint>
+      <datasheet>http://www.tracopower.com/products/tsr1.pdf</datasheet>
+      <libsource lib="Regulator_Switching" part="TSR_1-2433" description="1A step-down regulator module, fixed 3.3V output voltage, 5-36V input voltage, -40°C to +85°C temperature range, TO-220 compatible LM78xx replacement"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60ABCE50</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>1 mF</value>
+      <footprint>Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60B5EA6A</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>B80C2300-1500A</value>
+      <footprint>Diode_THT:Diode_Bridge_19.0x3.5x10.0mm_P5.0mm</footprint>
+      <datasheet>https://diotec.com/tl_files/diotec/files/pdf/datasheets/b40c2300.pdf</datasheet>
+      <libsource lib="Diode_Bridge" part="B80C2300-1500A" description="Silicon Bridge Rectifier, 80V Vrms, 1.5A If, pins=-AA+, SIL-package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AC1C16</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x02_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60B3C363</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x02_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60B2FF87</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x02_Male">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic_Shielded" part="Conn_02x04_Top_Bottom_Shielded">
+      <description>Generic shielded connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??-1SH*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Top_Bottom_Shielded</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="SH" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N4148">
+      <aliases>
+        <alias>1N4448</alias>
+        <alias>1N4149</alias>
+        <alias>1N4151</alias>
+        <alias>1N914</alias>
+        <alias>BA243</alias>
+        <alias>BA244</alias>
+        <alias>BA282</alias>
+        <alias>BA283</alias>
+        <alias>BAV17</alias>
+        <alias>BAV18</alias>
+        <alias>BAV19</alias>
+        <alias>BAV20</alias>
+        <alias>BAV21</alias>
+        <alias>BAW75</alias>
+        <alias>BAW76</alias>
+        <alias>BAY93</alias>
+      </aliases>
+      <description>100V 0.15A standard switching diode, DO-35</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</docs>
+      <footprints>
+        <fp>D*DO?35*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4148</field>
+        <field name="Footprint">Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode_Bridge" part="B40C2300-1500A">
+      <aliases>
+        <alias>B80C2300-1500A</alias>
+        <alias>B125C2300-1500A</alias>
+        <alias>B250C2300-1500A</alias>
+        <alias>B380C2300-1500A</alias>
+        <alias>B500C2300-1500A</alias>
+      </aliases>
+      <description>Silicon Bridge Rectifier, 40V Vrms, 1.5A If, pins=-AA+, SIL-package</description>
+      <docs>https://diotec.com/tl_files/diotec/files/pdf/datasheets/b40c2300.pdf</docs>
+      <footprints>
+        <fp>D*Bridge*19.0x3.5x10.0mm*P5.0mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">B40C2300-1500A</field>
+        <field name="Footprint">Diode_THT:Diode_Bridge_19.0x3.5x10.0mm_P5.0mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="passive"/>
+        <pin num="2" name="~~" type="passive"/>
+        <pin num="3" name="~~" type="passive"/>
+        <pin num="4" name="+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Isolator" part="PC817">
+      <aliases>
+        <alias>EL817</alias>
+      </aliases>
+      <description>DC Optocoupler, Vce 35V, CTR 50-300%, DIP-4</description>
+      <docs>http://www.soselectronic.cz/a_info/resource/d/pc817.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PC817</field>
+        <field name="Footprint">Package_DIP:DIP-4_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="TSR_1-2450">
+      <aliases>
+        <alias>TSR_1-2412</alias>
+        <alias>TSR_1-2415</alias>
+        <alias>TSR_1-2418</alias>
+        <alias>TSR_1-2425</alias>
+        <alias>TSR_1-2433</alias>
+        <alias>TSR_1-2465</alias>
+        <alias>TSR_1-2490</alias>
+        <alias>TSR_1-24120</alias>
+        <alias>TSR_1-24150</alias>
+      </aliases>
+      <description>1A step-down regulator module, fixed 5V output voltage, 5-36V input voltage, -40°C to +85°C temperature range, TO-220 compatible LM78xx replacement</description>
+      <docs>http://www.tracopower.com/products/tsr1.pdf</docs>
+      <footprints>
+        <fp>Converter*DCDC*TRACO*TSR?1*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TSR_1-2450</field>
+        <field name="Footprint">Converter_DCDC:Converter_DCDC_TRACO_TSR-1_THT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vin" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="Vout" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic_Shielded">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic_Shielded.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Diode.lib</uri>
+    </library>
+    <library logical="Diode_Bridge">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Diode_Bridge.lib</uri>
+    </library>
+    <library logical="Isolator">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Isolator.lib</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Regulator_Switching.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="D1" pin="4"/>
+    </net>
+    <net code="2" name="Net-(J3-PadSH)">
+      <node ref="J3" pin="SH"/>
+    </net>
+    <net code="3" name="Net-(D1-Pad3)">
+      <node ref="J1" pin="2"/>
+      <node ref="D1" pin="3"/>
+    </net>
+    <net code="4" name="Net-(D1-Pad2)">
+      <node ref="J1" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="5" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="D1" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U2" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J3" pin="5"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="7" name="/TX">
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="8" name="/GPIO2">
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="9" name="/GPIO0">
+      <node ref="J3" pin="7"/>
+    </net>
+    <net code="10" name="/RX">
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="11" name="/CH_PD">
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="12" name="/RST">
+      <node ref="J3" pin="3"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="13" name="/VCC">
+      <node ref="J3" pin="4"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="14" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+  </nets>
+</export>
