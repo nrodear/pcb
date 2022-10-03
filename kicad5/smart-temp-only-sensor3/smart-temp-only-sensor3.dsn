@@ -1,0 +1,156 @@
+(pcb "D:\raspberry\git\pcb\kicad5\smart-temp-only-sensor3\smart-temp-only-sensor3.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(5.1.12)-1")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  89500 -70250  71500 -70250  71500 -58000  89500 -58000
+            89500 -70250)
+    )
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component "Connector_USB:USB_Mini-B_Tensility_54-00023_Vertical"
+      (place J1 82250 -62500 front 270 (PN USB_B_Mini))
+    )
+    (component Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical
+      (place J2 76825 -60325 front 0 (PN Conn_01x04_Female))
+    )
+  )
+  (library
+    (image "Connector_USB:USB_Mini-B_Tensility_54-00023_Vertical"
+      (outline (path signal 150  5500 2900  5500 2300))
+      (outline (path signal 50  6000 3200  -2800 3200))
+      (outline (path signal 50  6000 -1500  6000 3200))
+      (outline (path signal 50  -2800 -1500  6000 -1500))
+      (outline (path signal 50  -2800 3200  -2800 -1500))
+      (outline (path signal 150  -2300 2300  -2300 2900))
+      (outline (path signal 150  5500 -1200  5500 -600))
+      (outline (path signal 150  -2300 -1200  5500 -1200))
+      (outline (path signal 150  -2300 -600  -2300 -1200))
+      (outline (path signal 150  -2300 2900  5500 2900))
+      (outline (path signal 150  -2000 -900  -2000 2600))
+      (outline (path signal 150  5200 2600  -2000 2600))
+      (outline (path signal 150  5200 2600  5200 -900))
+      (outline (path signal 150  700 -900  5200 -900))
+      (outline (path signal 150  0 -200  700 -900))
+      (outline (path signal 150  -700 -900  0 -200))
+      (outline (path signal 150  -2000 -900  -700 -900))
+      (outline (path signal 150  -500 -1500  500 -1500))
+      (pin Rect[A]Pad_1100x1100_um 1 0 0)
+      (pin Round[A]Pad_1100_um 2 800 1750)
+      (pin Round[A]Pad_1100_um 3 1600 0)
+      (pin Round[A]Pad_1100_um 4 2400 1750)
+      (pin Round[A]Pad_1100_um 5 3200 0)
+      (pin Oval[A]Pad_1100x2400_um 6 -2050 875)
+      (pin Oval[A]Pad_1100x2400_um 6@1 5250 875)
+    )
+    (image Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical
+      (outline (path signal 50  -1800 -9400  -1800 1800))
+      (outline (path signal 50  1750 -9400  -1800 -9400))
+      (outline (path signal 50  1750 1800  1750 -9400))
+      (outline (path signal 50  -1800 1800  1750 1800))
+      (outline (path signal 120  0 1330  1330 1330))
+      (outline (path signal 120  1330 1330  1330 0))
+      (outline (path signal 120  1330 -1270  1330 -8950))
+      (outline (path signal 120  -1330 -8950  1330 -8950))
+      (outline (path signal 120  -1330 -1270  -1330 -8950))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 100  -1270 -8890  -1270 1270))
+      (outline (path signal 100  1270 -8890  -1270 -8890))
+      (outline (path signal 100  1270 635  1270 -8890))
+      (outline (path signal 100  635 1270  1270 635))
+      (outline (path signal 100  -1270 1270  635 1270))
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
+    )
+    (padstack Round[A]Pad_1100_um
+      (shape (circle F.Cu 1100))
+      (shape (circle B.Cu 1100))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1100x2400_um
+      (shape (path F.Cu 1100  0 -650  0 650))
+      (shape (path B.Cu 1100  0 -650  0 650))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1700x1700_um
+      (shape (path F.Cu 1700  0 0  0 0))
+      (shape (path B.Cu 1700  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1100x1100_um
+      (shape (rect F.Cu -550 -550 550 550))
+      (shape (rect B.Cu -550 -550 550 550))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1700x1700_um
+      (shape (rect F.Cu -850 -850 850 850))
+      (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(J1-Pad2)"
+      (pins J1-2 J2-3)
+    )
+    (net "Net-(J1-Pad3)"
+      (pins J1-3 J2-2)
+    )
+    (net "Net-(J1-Pad4)"
+      (pins J1-4)
+    )
+    (net "Net-(J1-Pad6)"
+      (pins J1-6 J1-6@1)
+    )
+    (net +3V3
+      (pins J1-1 J2-1)
+    )
+    (net GND1
+      (pins J1-5 J2-4)
+    )
+    (class kicad_default "" +3V3 GND1 "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J1-Pad3)"
+      "Net-(J1-Pad4)" "Net-(J1-Pad5)" "Net-(J1-Pad6)" "Net-(J2-Pad1)" "Net-(J2-Pad2)"
+      "Net-(J2-Pad3)" "Net-(J2-Pad4)"
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

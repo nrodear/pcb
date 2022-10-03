@@ -1,0 +1,123 @@
+
+(session "smart-temp-only-sensor3.ses"
+  (base_design "smart-temp-only-sensor3.dsn")
+  (placement
+    (resolution um 10)
+    (component "Connector_USB:USB_Mini-B_Tensility_54-00023_Vertical"
+      (place J1 822500 -625000 front 270)
+    )
+    (component Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical
+      (place J2 768250 -603250 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(5.1.12)-1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(J1-Pad2)"
+        (wire
+          (path B.Cu 2500
+            768250 -654050
+            780001 -654050
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            780001 -654050
+            780001 -651847
+            815600 -616248
+            829376 -616248
+            840000 -626872
+            840000 -633000
+          )
+        )
+      )
+      (net "Net-(J1-Pad3)"
+        (wire
+          (path F.Cu 2500
+            768250 -628650
+            780001 -628650
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            780001 -628650
+            792351 -641000
+            822500 -641000
+          )
+        )
+      )
+      (net "Net-(J1-Pad6)"
+        (wire
+          (path F.Cu 2500
+            831250 -604500
+            846501 -604500
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            831250 -677500
+            846501 -677500
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            846501 -677500
+            848751 -675250
+            848751 -606750
+            846501 -604500
+          )
+        )
+      )
+      (net +3V3
+        (wire
+          (path F.Cu 2500
+            768250 -603250
+            780001 -603250
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            780001 -603250
+            801751 -625000
+            822500 -625000
+          )
+        )
+      )
+      (net GND1
+        (wire
+          (path F.Cu 2500
+            768250 -679450
+            800050 -679450
+            822500 -657000
+          )
+        )
+      )
+    )
+  )
+)
