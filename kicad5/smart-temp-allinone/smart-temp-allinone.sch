@@ -1,0 +1,273 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 6356 2909 0    50   ~ 0
+TX
+Text Label 6248 3001 0    50   ~ 0
+CHPD
+Text Label 6320 3095 0    50   ~ 0
+RST
+Text Label 6302 3194 0    50   ~ 0
+VCC
+Text Label 6991 2886 0    50   ~ 0
+GND2
+Text Label 6991 2989 0    50   ~ 0
+GPIO2
+Text Label 6991 3084 0    50   ~ 0
+GPIO0
+Text Label 7000 3187 0    50   ~ 0
+RX
+Text Label 8668 3080 2    50   ~ 0
+SDA
+Text Label 8659 2983 2    50   ~ 0
+SDL
+Text Label 8704 2884 2    50   ~ 0
+GND2
+Text Label 8679 2785 2    50   ~ 0
+VCC
+$Comp
+L power:GND #PWR0102
+U 1 1 6344C164
+P 3700 4000
+F 0 "#PWR0102" H 3700 3750 50  0001 C CNN
+F 1 "GND" H 3705 3827 50  0000 C CNN
+F 2 "" H 3700 4000 50  0001 C CNN
+F 3 "" H 3700 4000 50  0001 C CNN
+	1    3700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3900 3700 4000
+NoConn ~ 2600 4200
+NoConn ~ 3000 3900
+NoConn ~ 3000 3800
+$Comp
+L power:GND2 #PWR0104
+U 1 1 63467DFE
+P 5500 4000
+F 0 "#PWR0104" H 5500 3750 50  0001 C CNN
+F 1 "GND2" H 5505 3827 50  0000 C CNN
+F 2 "" H 5500 4000 50  0001 C CNN
+F 3 "" H 5500 4000 50  0001 C CNN
+	1    5500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3000 5800 3200
+Wire Wire Line
+	5800 3600 5500 3600
+Wire Wire Line
+	5800 3600 5800 4300
+Wire Wire Line
+	5800 4300 9100 4300
+Connection ~ 5800 3600
+Wire Wire Line
+	5500 3800 5500 4000
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 63473160
+P 6700 3100
+F 0 "J2" H 6750 2675 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 6473 2783 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 6700 3100 50  0001 C CNN
+F 3 "~" H 6700 3100 50  0001 C CNN
+	1    6700 3100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6500 3000 5800 3000
+Wire Wire Line
+	6500 3200 5800 3200
+Connection ~ 5800 3200
+Wire Wire Line
+	5800 3200 5800 3600
+NoConn ~ 6500 3100
+NoConn ~ 6500 2900
+NoConn ~ 7000 3200
+$Comp
+L Connector:USB_A J3
+U 1 1 6348612A
+P 7700 3600
+F 0 "J3" H 7757 4067 50  0000 C CNN
+F 1 "USB_A" H 7757 3976 50  0000 C CNN
+F 2 "kicad3_footprint:USB_A_Molex_67643_Horizontal_femal" H 7850 3550 50  0001 C CNN
+F 3 " ~" H 7850 3550 50  0001 C CNN
+	1    7700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J4
+U 1 1 6348F4C0
+P 8900 3000
+F 0 "J4" H 8928 2976 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 8928 2885 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal" H 8900 3000 50  0001 C CNN
+F 3 "~" H 8900 3000 50  0001 C CNN
+	1    8900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2800 8500 2800
+Wire Wire Line
+	8500 2800 8500 2700
+Wire Wire Line
+	8500 2700 9100 2700
+Wire Wire Line
+	9100 2700 9100 3400
+Wire Wire Line
+	9100 3400 8000 3400
+Wire Wire Line
+	9100 3400 9100 4300
+Connection ~ 9100 3400
+$Comp
+L power:GND2 #PWR0105
+U 1 1 63496DC2
+P 7700 4100
+F 0 "#PWR0105" H 7700 3850 50  0001 C CNN
+F 1 "GND2" H 7705 3927 50  0000 C CNN
+F 2 "" H 7700 4100 50  0001 C CNN
+F 3 "" H 7700 4100 50  0001 C CNN
+	1    7700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND2 #PWR0106
+U 1 1 6349819F
+P 7000 2700
+F 0 "#PWR0106" H 7000 2450 50  0001 C CNN
+F 1 "GND2" H 7005 2527 50  0000 C CNN
+F 2 "" H 7000 2700 50  0001 C CNN
+F 3 "" H 7000 2700 50  0001 C CNN
+	1    7000 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND2 #PWR0107
+U 1 1 6349A5E2
+P 8300 2700
+F 0 "#PWR0107" H 8300 2450 50  0001 C CNN
+F 1 "GND2" H 8305 2527 50  0000 C CNN
+F 2 "" H 8300 2700 50  0001 C CNN
+F 3 "" H 8300 2700 50  0001 C CNN
+	1    8300 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 2700 7000 2900
+Wire Wire Line
+	8700 2900 8300 2900
+Wire Wire Line
+	8300 2900 8300 2700
+Wire Wire Line
+	8700 3000 8300 3000
+Wire Wire Line
+	8700 3100 8200 3100
+Wire Wire Line
+	8300 3000 8300 3700
+Wire Wire Line
+	8300 3700 8000 3700
+Connection ~ 8300 3000
+Wire Wire Line
+	8300 3000 7000 3000
+Wire Wire Line
+	8200 3100 8200 3600
+Wire Wire Line
+	8200 3600 8000 3600
+Connection ~ 8200 3100
+Wire Wire Line
+	8200 3100 7000 3100
+Wire Wire Line
+	7700 4000 7700 4100
+NoConn ~ 8700 3300
+NoConn ~ 8700 3200
+NoConn ~ 7600 4000
+$Comp
+L Connector:USB_A J1
+U 1 1 634A96F4
+P 2700 3800
+F 0 "J1" H 2757 4267 50  0000 C CNN
+F 1 "USB_A" H 2757 4176 50  0000 C CNN
+F 2 "kicad3_footprint:USB_A_Molex_67643_Horizontal_male_plug" H 2850 3750 50  0001 C CNN
+F 3 " ~" H 2850 3750 50  0001 C CNN
+	1    2700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Converter_DCDC:MEE1S0503SC PS1
+U 1 1 634AAAF0
+P 5100 3700
+F 0 "PS1" H 5100 4067 50  0000 C CNN
+F 1 "MEE1S0503SC" H 5100 3976 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_Murata_MEE1SxxxxSC_THT" H 4050 3450 50  0001 L CNN
+F 3 "https://power.murata.com/pub/data/power/ncl/kdc_mee1.pdf" H 6150 3400 50  0001 L CNN
+	1    5100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 634BA9E4
+P 3950 3600
+F 0 "L1" H 3950 3815 50  0000 C CNN
+F 1 "INDUCTOR" H 3950 3724 50  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 3950 3600 50  0001 C CNN
+F 3 "~" H 3950 3600 50  0001 C CNN
+	1    3950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 60BED24B
+P 3700 3750
+F 0 "C1" H 3818 3796 50  0000 L CNN
+F 1 "CP" H 3818 3705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3738 3600 50  0001 C CNN
+F 3 "~" H 3700 3750 50  0001 C CNN
+	1    3700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3600 4700 3600
+Wire Wire Line
+	4700 3800 4550 3800
+$Comp
+L power:GND #PWR0101
+U 1 1 634C6EE3
+P 2700 4300
+F 0 "#PWR0101" H 2700 4050 50  0001 C CNN
+F 1 "GND" H 2705 4127 50  0000 C CNN
+F 2 "" H 2700 4300 50  0001 C CNN
+F 3 "" H 2700 4300 50  0001 C CNN
+	1    2700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 634C7E0A
+P 4550 4000
+F 0 "#PWR0103" H 4550 3750 50  0001 C CNN
+F 1 "GND" H 4555 3827 50  0000 C CNN
+F 2 "" H 4550 4000 50  0001 C CNN
+F 3 "" H 4550 4000 50  0001 C CNN
+	1    4550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3800 4550 4000
+Wire Wire Line
+	2700 4200 2700 4300
+Wire Wire Line
+	3700 3600 3000 3600
+Connection ~ 3700 3600
+$EndSCHEMATC
