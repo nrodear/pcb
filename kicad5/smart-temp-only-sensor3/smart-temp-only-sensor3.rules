@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 3)
+    (start_pass_no 4)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -62,7 +62,7 @@
     )
   )
   (class "kicad_default"
-    "Net-(J1-Pad4)" "Net-(J1-Pad6)" +3V3 GND1 "/SDA_GPIO_0" "/SDL_GPIO_2"
+    "Net-(J1-Pad4)" "Net-(J1-Pad6)" +3V3 GND1 "Net-(J1-Pad3)" "/SDL_GPIO_2-"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
