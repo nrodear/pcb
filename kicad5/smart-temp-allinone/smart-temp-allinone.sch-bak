@@ -30,9 +30,9 @@ GPIO0
 Text Label 7000 3187 0    50   ~ 0
 RX
 Text Label 8668 3080 2    50   ~ 0
-SDA+
+SDA
 Text Label 8659 2983 2    50   ~ 0
-SDL-
+SDL
 Text Label 8704 2884 2    50   ~ 0
 GND2
 Text Label 8679 2785 2    50   ~ 0
