@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\raspberry\git\pcb\kicad5\smart-temp-only-sensor3\smart-temp-only-sensor3.sch)
-    (date "08.10.2022 13:34:27")
+    (date "11.10.2022 10:50:55")
     (tool "Eeschema (5.1.12)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
